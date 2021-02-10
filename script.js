@@ -26,7 +26,7 @@ function start() {
         console.log("Start Events")
         alert("The countdown has begun","You can do it")
         clearInterval(setCountDownInterval)
-        startCountDown(1)
+        startCountDown(45)
     }))
 }
 
