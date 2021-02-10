@@ -1,4 +1,7 @@
 
+Notification.requestPermission().then(function(result) {
+    console.log(result);
+});
 
 let setCountDownInterval
 
@@ -26,6 +29,8 @@ function start() {
         startCountDown(1)
     }))
 }
+
+init()
 
 function cancel() {
     const btnStart= document.querySelector(".js-cancel")
@@ -63,12 +68,5 @@ function init() {
     listeners()
 }
 
-init()
-window.onload = () => {
-    "use strict";
-  
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./sw.js");
-    }
-  };
+
 
